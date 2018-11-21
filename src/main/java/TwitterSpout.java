@@ -14,20 +14,20 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class TwitterSpout extends BaseRichSpout {
 
     private SpoutOutputCollector spoutOutputCollector;
-
     private LinkedBlockingQueue<Status> queue;
-
     private TwitterStream twitterStream;
 
     public void open(Map map, TopologyContext topologyContext, SpoutOutputCollector spoutOutputCollector) {
         this.spoutOutputCollector = spoutOutputCollector;
 
         ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
-        configurationBuilder.setDebugEnabled(true)
-                .setOAuthConsumerKey("ConsumerKey")
-                .setOAuthConsumerSecret("ConsumerSecret")
-                .setOAuthAccessToken("AccessToken")
-                .setOAuthAccessTokenSecret("AccessTokenSecret");
+
+        configurationBuilder
+                .setOAuthConsumerKey("jSRNPoKRdCklZksI1F2Zgf5dT")
+                .setOAuthConsumerSecret("JLNvnBSWYTNcsBA5bgqC0AEbHb99SJ7tj7rJkLkhHV6wmwa5Pf")
+                .setOAuthAccessToken("1052765523195367424-x8IvDifs2W0GT3J1JhirnyFKsHAtcp")
+                .setOAuthAccessTokenSecret("8VJmnued9KpadDvyGYhXKhMH5kWZXCWbNa0W91NPVkVhP")
+                .setTweetModeExtended(true);
 
 
         this.twitterStream = new TwitterStreamFactory(configurationBuilder.build()).getInstance();
@@ -62,7 +62,9 @@ public class TwitterSpout extends BaseRichSpout {
 
         twitterStream.addListener(statusListener);
         final FilterQuery query = new FilterQuery();
-        query.track(new String[]{"gapol"});
+        query.track(new String[]{"staceyabrams","imwithstacey"});
+//        query.track(new String[]{"gapol","imwithstacey","GAGov","BrianKempGA","staceyabrams","KempForGovernor"});
+
         twitterStream.filter(query);
     }
 
@@ -70,7 +72,7 @@ public class TwitterSpout extends BaseRichSpout {
         final Status status = queue.poll();
 
         if (status == null) {
-            Utils.sleep(50);
+            Utils.sleep(60);
         } else {
             spoutOutputCollector.emit(new Values(status));
         }
