@@ -5,8 +5,21 @@
 
    This paper presents Predicting Georgia Election Results with Tweet Sentiment Analysis to analyze citizen tweets which can be used as a good predictor of public opinion regarding the Georgia elections and the two candidates (Brian Kemp vs Stacey Abrams). To perform sentiment analysis of tweets we have implemented various machine learning algorithms such as Dictionary based, LSTM using Glove & Bidirectional LSTM using Glove. Our results show that LSTM achieves an accuracy of 94% in predicting the sentiment of a tweet as positive or negative for the respective candidate.  
 
-System Architecture
+### System Architecture:
 -----------
 
 ![alt text](https://github.com/RakeshrBhavsar/Twitter-Sentimental-Analysis-using-Apache-Storm/blob/master/images/Picture1.png "System Architecture")
+
+
+### Requirements:
+    - Python
+    - Java
+    - Maven
+    - Apache Storm
+    - Keras 
+    - Tensorflow
+    - Numpy
+    - AWS EC2 (p2.xlarge)
+    - Springboot framework. 
+
 
