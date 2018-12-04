@@ -7,4 +7,6 @@
 
 System Architecture
 -----------
+Here's our System Architecture:
+![alt text](https://github.com/RakeshrBhavsar/Twitter-Sentimental-Analysis-using-Apache-Storm/blob/master/images/Picture1.png "System Architecture")
 
