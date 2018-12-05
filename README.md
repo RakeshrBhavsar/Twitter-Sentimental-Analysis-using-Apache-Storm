@@ -10,6 +10,20 @@
 
 ![alt text](https://github.com/RakeshrBhavsar/Twitter-Sentimental-Analysis-using-Apache-Storm/blob/master/images/Picture1.png "System Architecture")
 
+### Conclusion:
+
+- Collected live tweets using apache storm consisting of mixture of words, emoticons, URLs, hashtags, user mentions and symbols. Performed Pre-Processing of tweets to make it suitable for feeding into model.
+
+- We have used machine learning algorithms such as dictionary based, LSTM using Glove and BiDirectional LSTM using Glove. 
+
+| Model                          | Accuracy  |
+| ------------------------------ |:---------:|
+| Dictionary Based               | 63.38%    |
+| LSTM using Glove               | 94.00%    |
+| BiDirectional LSTM using Glove | 94.5%     |
+
+- We have Trained & Tested our Model on AWS EC2 Instance (p2.xlarge). Our Best LSTM model achieved an accuracy of 94%.
+
 
 ### Requirements:
     - Python
