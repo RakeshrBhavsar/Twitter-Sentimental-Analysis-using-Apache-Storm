@@ -36,4 +36,7 @@
     - AWS EC2 (p2.xlarge)
     - Springboot framework. 
 
-
+### YouTube Video:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=XHiMdXLawt8
+" target="_blank"><img src="http://img.youtube.com/vi/XHiMdXLawt8/0.jpg" 
+alt="CSCI 8000: Advanced Cloud Computing Class" width="240" height="180" border="10" /></a>
