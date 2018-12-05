@@ -10,7 +10,7 @@
 
 ![alt text](https://github.com/RakeshrBhavsar/Twitter-Sentimental-Analysis-using-Apache-Storm/blob/master/images/Picture1.png "System Architecture")
 
-### Conclusion:
+### This project has following features :
 
 - Collected live tweets using apache storm consisting of mixture of words, emoticons, URLs, hashtags, user mentions and symbols. Performed Pre-Processing of tweets to make it suitable for feeding into model.
 
